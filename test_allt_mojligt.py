@@ -21,7 +21,8 @@ print norr.description
 print norr.paths
 
 h = {'norr': norr}
-norr.add_paths(h)
+norr.add_paths(h) 
 norr.go(center)
-print norr.paths
-print norr.go
+print norr.paths # gives: {'norr': <__main__.Room object at 0x7fef96630450>}
+print norr.go # gives <bound method Room.go of <__main__.Room object at 0x7fc8e782d450>>
+
