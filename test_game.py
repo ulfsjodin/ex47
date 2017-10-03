@@ -20,10 +20,10 @@ def test_add_paths():
     south_room.add_paths({'north': center_room})
 
 
-    riktning = north_room.go('south')
-    assert riktning.name == 'South'
-    riktning = riktning.go('north')
-    assert riktning.name == 'Center'
-    riktning = riktning.go('north')
-    assert riktning.name == 'North'
-    # riktning == direction in English
+    my_rooms = north_room.go('south')
+    assert my_rooms.name == 'South'
+    my_rooms = my_rooms.go('north')
+    assert my_rooms.name == 'Center'
+    my_rooms = my_rooms.go('north')
+    assert my_rooms.name == 'North'
+    
